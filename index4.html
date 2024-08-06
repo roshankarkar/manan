@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manan Nariya Resume</title>
+    <!-- Attach CSS File -->
+    <link rel="stylesheet" href="style4.css" />
+
+    <!-- Add Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e27e85e5f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-container">
+        <div class="name">
+          <p>Manan Nariya</p>
+        </div>
+        <nav>
+          <ul class="menu-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#language">Language</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+          </ul>
+          <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+        <div class="close-icon">
+          <i class="fa fa-times"></i>
+        </div>
+        <ul class="sidebar-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#language">Language</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <section id="profile">
+        <div class="profile-container">
+          <img src="Resume Img.jpg" alt="Manan Nariya" />
+          <h1>Manan Nariya</h1>
+          <h2>WEB DEVELOPER</h2>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="content-container">
+          <h2>About Me</h2>
+          <p>
+            Hello! My name is Nariya Manan. I am a BCA student at SDJ
+            International College, affiliated with Veer Narmad South Gujarat
+            University. Known for my bright and receptive nature, I excel at
+            communicating effectively with individuals at all levels. My
+            enthusiasm for learning and my ability to connect with diverse
+            audiences set me apart in both academic and social settings.
+          </p>
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <p><a href="tel:123-456-7890">+91 8780377240</a></p>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <p>
+                <a href="mailto:hello@reallygreatsite.com"
+                  >Manannariya869@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="content-container">
+          <h2>Experience</h2>
+          <div class="experience-item">
+            <h3>GDA & Co</h3>
+            <p>Surat,Gujarat (2020 - 2022)</p>
+            <p>
+              I have been working for 1 year in an accounting company, where I
+              developed strong skills in financial analysis and data management.
+              (also work in GMS)
+            </p>
+          </div>
+          <div class="experience-item">
+            <h3>KPWORLD MEDIA TECH PVT LTD.</h3>
+            <p>Surat,Gujarat (2020 - 2022)</p>
+            <p>
+              I have 6 months of experience in web development, focusing on
+              designing websites.
+            </p>
+          </div>
+          <!--<div class="experience-item">
+                    <h3></h3>
+                    <p> (2010 - 2015)</p>
+                    <p></p>
+                </div>-->
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="content-container">
+          <h2>Education</h2>
+          <div class="education-item">
+            <h3>Vidya Mangal School</h3>
+            <p>High school (2014 - 2023)</p>
+          </div>
+          <div class="education-item">
+            <h3>Sdj College</h3>
+            <p>
+              Currently, studying for a Bachelor of Computer Applications (BCA)
+              degree.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="content-container">
+          <h2>Skills Summary</h2>
+          <div class="progress-bar-item">
+            <ul>
+              <li>Web Technology</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="language">
+        <div class="content-container">
+          <h2>Language</h2>
+          <ul>
+            <li>English</li>
+            <li>Gujarat</li>
+            <li>Spanish</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="expertise">
+        <div class="content-container">
+          <h2>Achievements & expertise</h2>
+          <ul>
+            <li>State champion in sktating (sports)</li>
+            <li>Foundation of IT support</li>
+            <li>Negotiation</li>
+            <li>Critical Thinking</li>
+            <li>Leadership</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      document
+        .querySelector(".menu-icon")
+        .addEventListener("click", function () {
+          document.getElementById("sidebar").style.width = "250px";
+        });
+
+      document
+        .querySelector(".close-icon")
+        .addEventListener("click", function () {
+          document.getElementById("sidebar").style.width = "0";
+        });
+
+      document.querySelectorAll(".sidebar a").forEach((anchor) => {
+        anchor.addEventListener("click", function () {
+          document.getElementById("sidebar").style.width = "0";
+        });
+      });
+    </script>
+  </body>
+</html>

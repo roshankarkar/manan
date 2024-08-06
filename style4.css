@@ -1,0 +1,270 @@
+
+    
+/* ADD Montserrat Font From Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+background: #EBECF0;
+font-family: 'Montserrat', sans-serif;
+color: #010101;
+}
+
+a {
+color: #010101;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: none;
+position: relative;
+}
+
+li a::after {
+content: '';
+display: block;
+width: 0;
+height: 1px;
+background: #FFF;
+transition: width 0.3s;
+position: absolute;
+left: 0;
+bottom: -2px;
+}
+
+a:hover::after {
+width: 100%;
+}
+
+header {
+background: #27384C;
+padding: 10px 0;
+position: sticky;
+top: 0;
+width: 100%;
+z-index: 1000;
+}
+
+.menu-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.name p {
+margin: 0;
+font-size: 18px;
+color: white;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+margin: 0 15px;
+}
+
+nav ul li a {
+color: white;
+font-size: 16px;
+}
+
+.menu-icon {
+display: none;
+font-size: 24px;
+color: white;
+cursor: pointer;
+}
+
+.sidebar {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1001;
+top: 0;
+right: 0;
+background-color: #27384C;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidebar-content {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0 20px;
+color: white;
+}
+
+.sidebar .close-icon {
+position: absolute;
+top: 20px;
+left: 25px;
+font-size: 36px;
+cursor: pointer;
+}
+
+.sidebar ul {
+list-style: none;
+padding: 0;
+width: 100%;
+}
+
+.sidebar ul li {
+margin: 20px 0;
+}
+
+.sidebar ul li a {
+color: white;
+font-size: 18px;
+}
+
+main {
+padding: 20px;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.profile-container {
+text-align: center;
+}
+
+.profile-container img {
+width: 300px;
+height: 300px;
+border-radius: 50%;
+object-fit: cover;
+border: 5px solid #27384C;
+}
+
+.profile-container h1 {
+margin: 10px 0 5px;
+font-size: 36px;
+color: #27384C;
+}
+
+.profile-container h2 {
+margin: 5px 0;
+font-size: 24px;
+color: #555;
+}
+
+.content-container {
+background: white;
+padding: 20px;
+margin: 20px 0;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+}
+
+.content-container h2 {
+margin-top: 0;
+font-size: 24px;
+color: #27384C;
+}
+
+.contact-info {
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+}
+
+.contact-info .info-item {
+display: flex;
+align-items: center;
+}
+
+.contact-info .info-item i {
+margin-right: 10px;
+}
+
+.experience-item, .education-item {
+margin-bottom: 20px;
+}
+
+.progress-bar-item {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.progress-container {
+width: 100%;
+background-color: #E4E9EA;
+border-radius: 25px;
+overflow: hidden;
+margin-left: 10px;
+}
+
+.progress-bar {
+height: 10px;
+background-color: #27384C;
+border-radius: 25px 0 0 25px;
+}
+
+ul {
+padding-left: 20px;
+}
+
+ul li {
+margin-bottom: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+nav ul {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+}
+
+.name p {
+    font-size: 16px;
+}
+
+.sidebar .close-icon {
+    font-size: 24px;
+}
+
+.sidebar-content {
+    align-items: flex-start;
+    padding: 0 20px;
+}
+}
+
+@media (max-width: 600px) {
+main {
+    padding: 10px;
+}
+
+.profile-container h1 {
+    font-size: 28px;
+}
+
+.profile-container h2 {
+    font-size: 18px;
+}
+
+.content-container {
+    padding: 15px;
+}
+
+.menu-container {
+    padding: 0 10px;
+}
+}
